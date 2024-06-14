@@ -65,6 +65,33 @@ local C = game:GetService("Players").LocalPlayer.PlayerGui.PAGES.MatchPage.Frame
 VirtualInputManager:SendMouseButtonEvent(C.AbsolutePosition.X+16, C.AbsolutePosition.Y+40, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(C.AbsolutePosition.X+16, C.AbsolutePosition.Y+40, 0, false, game, 0);
 wait(2)
+VirtualInputManager:SendMouseButtonEvent(500, 200, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(500, 200, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(500, 220, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(500, 220, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(500, 240, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(500, 240, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(500, 260, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(500, 260, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(500, 280, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(500, 280, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(500, 300, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(500, 300, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(500, 320, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(500, 320, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(500, 340, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(500, 340, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(500, 360, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(500, 360, 0, false, game, 0);
+wait()
 VirtualInputManager:SendMouseButtonEvent(500, 385, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(500, 385, 0, false, game, 0);
 wait(2)
