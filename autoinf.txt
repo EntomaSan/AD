@@ -120,8 +120,8 @@ VirtualInputManager:SendKeyEvent(true,Enum.KeyCode.C,false,game);
 VirtualInputManager:SendKeyEvent(false,Enum.KeyCode.C,false,game);
 wait()
 local B = game:GetService("Players").LocalPlayer.PlayerGui.HUD.LocalUnitHolder.MainFrame.HolderButtons.UpgradeButton
-VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+65, B.AbsolutePosition.Y+40, 0, true, game, 0);
-VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+65, B.AbsolutePosition.Y+40, 0, false, game, 0);
+VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+58, B.AbsolutePosition.Y+40, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+58, B.AbsolutePosition.Y+40, 0, false, game, 0);
 wait(.3)
 --OpenUp
 local worldPoint = pos
@@ -131,15 +131,15 @@ VirtualInputManager:SendMouseButtonEvent(vector.X, vector.Y, 0, false, game, 0);
 wait(.6)
 --UpGrade
 local B = game:GetService("Players").LocalPlayer.PlayerGui.HUD.LocalUnitHolder.MainFrame.HolderButtons.UpgradeButton
-VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+65, B.AbsolutePosition.Y+40, 0, true, game, 0);
-VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+65, B.AbsolutePosition.Y+40, 0, false, game, 0);
-wait(.15)
-VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+65, B.AbsolutePosition.Y+40, 0, true, game, 0);
-VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+65, B.AbsolutePosition.Y+40, 0, false, game, 0);
-wait(.15)
-VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+65, B.AbsolutePosition.Y+40, 0, true, game, 0);
-VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+65, B.AbsolutePosition.Y+40, 0, false, game, 0);
-wait(0.1)
+VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+58, B.AbsolutePosition.Y+40, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+58, B.AbsolutePosition.Y+40, 0, false, game, 0);
+wait(.2)
+VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+58, B.AbsolutePosition.Y+40, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+58, B.AbsolutePosition.Y+40, 0, false, game, 0);
+wait(.2)
+VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+58, B.AbsolutePosition.Y+40, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(B.AbsolutePosition.X+58, B.AbsolutePosition.Y+40, 0, false, game, 0);
+wait(0.15)
 end
 --Teleport
 game.Workspace.Camera.CFrame = CFrame.new(-1677.71704, 41.8114777, -536.830811, 0.999538779, -0.0296325758, 0.00664062425, 0, 0.218675047, 0.975797594, -0.0303675439, -0.975347519, 0.218574196)
