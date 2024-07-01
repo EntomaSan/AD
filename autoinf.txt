@@ -68,9 +68,18 @@ VirtualInputManager:SendMouseButtonEvent(440, 348, 0, false, game, 0);
 wait(1.5)
 VirtualInputManager:SendMouseButtonEvent(470, 395, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(470, 395, 0, false, game, 0);
-wait(2.25)
+wait(2.3)
 VirtualInputManager:SendMouseButtonEvent(770, 342, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(770, 342, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(770, 341, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(770, 341, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(769, 341, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(769, 341, 0, false, game, 0);
+wait()
+VirtualInputManager:SendMouseButtonEvent(768, 341, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(768, 341, 0, false, game, 0);
 wait(90)
 game:GetService('TeleportService'):Teleport(17017769292 , game.Players.LocalPlayer)
 else
