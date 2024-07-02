@@ -46,7 +46,7 @@ if i == rand then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.MatchDisplayPart.CFrame
 end
 end
-wait()
+wait(.5)
 until game:GetService("Players").LocalPlayer.PlayerGui.PAGES.MatchPage.Visible == true
 wait(2)
 for i,v in pairs(game.Players.LocalPlayer.PlayerGui.PAGES.MatchPage:GetDescendants()) do
