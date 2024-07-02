@@ -5,6 +5,10 @@ wait(1040)
 game:GetService('TeleportService'):Teleport(17017769292 , game.Players.LocalPlayer)
 end)
 spawn(function()
+if game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() <= 1 then
+game.Players.LocalPlayer:Kick()
+wait(9999)
+end
 game.GuiService.Changed:Connect(function(child)
 if child == "MenuIsOpen" then
 wait(.5)
