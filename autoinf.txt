@@ -1,3 +1,4 @@
+repeat wait() until game:IsLoaded()
 --EmergencyRejoin
 spawn(function()
 print"Load Re"
@@ -31,7 +32,7 @@ game.Players.LocalPlayer.PlayerGui:WaitForChild("PAGES",20)
 game.Players.LocalPlayer.PlayerGui.PAGES:WaitForChild("MatchPage",20)
 game.Workspace:WaitForChild("SubStuff_DONT_DELETE",20)
 game:GetService("Workspace")["SubStuff_DONT_DELETE"]:WaitForChild("StoryPods",20)
-wait(12)
+wait(10)
 VirtualInputManager:SendKeyEvent(true,Enum.KeyCode.Tab,false,game);
 VirtualInputManager:SendKeyEvent(false,Enum.KeyCode.Tab,false,game);
 game.CoreGui:WaitForChild("ExperienceChat",40)
