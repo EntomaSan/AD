@@ -31,7 +31,7 @@ game.Players.LocalPlayer.PlayerGui:WaitForChild("PAGES",20)
 game.Players.LocalPlayer.PlayerGui.PAGES:WaitForChild("MatchPage",20)
 game.Workspace:WaitForChild("SubStuff_DONT_DELETE",20)
 game:GetService("Workspace")["SubStuff_DONT_DELETE"]:WaitForChild("StoryPods",20)
-wait(5)
+wait(12)
 VirtualInputManager:SendKeyEvent(true,Enum.KeyCode.Tab,false,game);
 VirtualInputManager:SendKeyEvent(false,Enum.KeyCode.Tab,false,game);
 game.CoreGui:WaitForChild("ExperienceChat",40)
@@ -52,7 +52,7 @@ end
 end
 wait(.75)
 until game:GetService("Players").LocalPlayer.PlayerGui.PAGES.MatchPage.Visible == true
-wait(4)
+wait(5)
 local Pressed = false
 --open
 local Opens = function()
@@ -66,6 +66,9 @@ VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+38, v.AbsolutePosi
 wait(1)
 VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+38, v.AbsolutePosition.Y+45, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+38, v.AbsolutePosition.Y+45, 0, false, game, 0);
+wait(1)
+VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+38, v.AbsolutePosition.Y+46, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+38, v.AbsolutePosition.Y+46, 0, false, game, 0);
 Pressed = true
 end
 end
@@ -74,7 +77,7 @@ Opens()
 end
 end
 Opens()
-wait(3)
+wait(3.5)
 local VirtualInputManager = game:GetService('VirtualInputManager')
 local C = game:GetService("Players").LocalPlayer.PlayerGui.PAGES.MatchPage.Frame.FriendsOnlyHolder.FriendsOnlyButton
 VirtualInputManager:SendMouseButtonEvent(C.AbsolutePosition.X+16, C.AbsolutePosition.Y+40, 0, true, game, 0);
