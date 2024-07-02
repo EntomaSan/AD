@@ -58,11 +58,14 @@ local Pressed = false
 local Opens = function()
 for i,v in pairs(game.Players.LocalPlayer.PlayerGui.PAGES.MatchPage:GetDescendants()) do
 if v:IsA"ImageButton" and v.Image == "rbxassetid://17534340660" then
-VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+39, v.AbsolutePosition.Y+40, 0, true, game, 0);
-VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+39, v.AbsolutePosition.Y+40, 0, false, game, 0);
+VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+39, v.AbsolutePosition.Y+43, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+39, v.AbsolutePosition.Y+43, 0, false, game, 0);
 wait(1.5)
-VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+38, v.AbsolutePosition.Y+39, 0, true, game, 0);
-VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+38, v.AbsolutePosition.Y+39, 0, false, game, 0);
+VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+38, v.AbsolutePosition.Y+44, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+38, v.AbsolutePosition.Y+44, 0, false, game, 0);
+wait(1)
+VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+38, v.AbsolutePosition.Y+45, 0, true, game, 0);
+VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+38, v.AbsolutePosition.Y+45, 0, false, game, 0);
 Pressed = true
 end
 end
