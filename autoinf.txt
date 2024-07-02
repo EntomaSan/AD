@@ -50,18 +50,27 @@ if i == rand then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.MatchDisplayPart.CFrame
 end
 end
-wait(.5)
+wait(.75)
 until game:GetService("Players").LocalPlayer.PlayerGui.PAGES.MatchPage.Visible == true
-wait(3)
+wait(4)
+local Pressed = false
+--open
+local Opens = function()
 for i,v in pairs(game.Players.LocalPlayer.PlayerGui.PAGES.MatchPage:GetDescendants()) do
 if v:IsA"ImageButton" and v.Image == "rbxassetid://17534340660" then
 VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+40, v.AbsolutePosition.Y+40, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+40, v.AbsolutePosition.Y+40, 0, false, game, 0);
 VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+40, v.AbsolutePosition.Y+40, 0, true, game, 0);
 VirtualInputManager:SendMouseButtonEvent(v.AbsolutePosition.X+40, v.AbsolutePosition.Y+40, 0, false, game, 0);
+Pressed = true
 end
 end
-wait(2.5)
+if Pressed == false then
+Opens()
+end
+end
+Opens()
+wait(3)
 local VirtualInputManager = game:GetService('VirtualInputManager')
 local C = game:GetService("Players").LocalPlayer.PlayerGui.PAGES.MatchPage.Frame.FriendsOnlyHolder.FriendsOnlyButton
 VirtualInputManager:SendMouseButtonEvent(C.AbsolutePosition.X+16, C.AbsolutePosition.Y+40, 0, true, game, 0);
