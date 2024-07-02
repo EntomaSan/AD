@@ -50,7 +50,7 @@ if i == rand then
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.MatchDisplayPart.CFrame
 end
 end
-wait(.75)
+wait(1.5)
 until game:GetService("Players").LocalPlayer.PlayerGui.PAGES.MatchPage.Visible == true
 wait(5)
 local Pressed = false
